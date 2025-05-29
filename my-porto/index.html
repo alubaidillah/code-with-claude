@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-container">
-                <div class="logo">SHOW OFF</div>
+                <div class="logo">AlUbaidillah</div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -22,53 +23,186 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, i'm <span class="typed-text" id="typed-text">Al Ubaidillah</span></h1>
-                <p>Full Stack Javascript Developer yang passionate dalam menciptakan web experience yang menakjubkan</p>
+                <h1>Saya <span class="typed-text" id="typed-text">Developer</span></h1>
+                <p class="subtitle">Membangun masa depan digital, satu kode pada satu waktu</p>
+                <a href="#projects" class="cta-button">Lihat Karya Saya</a>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title fade-in">Tentang Saya</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>Saya adalah seorang developer yang sedang dalam perjalanan menjadi Full Stack JavaScript expert. Dengan pengalaman 6 bulan, saya terus belajar dan mengembangkan skill untuk menciptakan aplikasi web yang powerful dan user-friendly.</p>
+                <div class="about-text fade-in">
+                    <p>Halo! Saya seorang Full Stack JavaScript Developer yang passionate dalam menciptakan solusi digital inovatif. Dengan pengalaman 6+ bulan dalam development, saya terus berinovasi dan belajar teknologi terbaru untuk memberikan hasil terbaik.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span>Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span>Commits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span>Months Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span>Available</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-section">
-                    <h3>My Skills</h3>
+                
+                <div class="skills-section fade-in">
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <h3>HTML5</h3>
-                            <p>Sematic & Modern</p>
-                        </div>
-
-                        <div class="skill-item">
-                            <h3>CSS3</h3>
-                            <p>Responsif & Animations</p>
-                        </div>
-
-                        <div class="skill-item">
+                            <span class="skill-icon">⚡</span>
                             <h3>JavaScript</h3>
-                            <p>ES6+ & DOM</p>
+                            <p>ES6+, DOM, Async/Await</p>
                         </div>
-
                         <div class="skill-item">
+                            <span class="skill-icon">⚛️</span>
                             <h3>React</h3>
-                            <p>Hooks & Components</p>
+                            <p>Hooks, Context, Redux</p>
                         </div>
-                        
+                        <div class="skill-item">
+                            <span class="skill-icon">🎨</span>
+                            <h3>CSS3</h3>
+                            <p>Flexbox, Grid, Animations</p>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">🚀</span>
+                            <h3>Node.js</h3>
+                            <p>Express, API, MongoDB</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Projects Saya</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">Platform e-commerce modern dengan fitur lengkap, payment gateway, dan dashboard admin yang powerful.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
 
-<script src="script.js"></script>
+                <div class="project-card fade-in">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-desc">Aplikasi manajemen tugas dengan real-time collaboration, drag & drop, dan notifikasi push.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card fade-in">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-desc">Dashboard cuaca interaktif dengan forecasting, maps integration, dan data visualization yang menarik.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Mari Berkolaborasi</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Hubungi Saya</h3>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>hello@developer.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>💼</span>
+                        <span>LinkedIn: /in/developer</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form fade-in">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DevPortfolio. Dibuat dengan ❤️ dan ☕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
