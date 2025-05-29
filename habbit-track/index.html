@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habbit Tracker - Al Ubaidillah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <div class="header">
+            <h1>🎯 Habit Tracker</h1>
+            <p>Bangun kebiasaan baik, capai tujuan hidup Anda!</p>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" id="totalHabits">0</div>
+                <div class="stat-label">Total Kebiasaan</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="completedToday">0</div>
+                <div class="stat-label">Selesai Hari Ini</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="longestStreak">0</div>
+                <div class="stat-label">Streak Terpanjang</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="completionRate">0%</div>
+                <div class="stat-label">Tingkat Penyelesaian</div>
+            </div>
+        </div>
+
+        <div class="add-habit-section">
+            <h3 style="margin-bottom: 20px;">➕ Tambah Kebiasaan Baru</h3>
+            <div class="add-habit-form">
+                <input type="text" id="habitInput" placeholder="Masukkan kebiasaan baru (contoh: Olahraga 30 menit)">
+                <button class="btn btn-primary" onclick="addHabit()">Tambah Kebiasaan</button>
+            </div>
+        </div>
+
+        <div class="habits-container">
+            <div id="habitsGrid" class="habits-grid"></div>
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <h3>Belum ada kebiasaan yang ditambahkan</h3>
+                <p>Mulai dengan menambahkan kebiasaan pertama Anda di atas!</p>
+            </div>
+        </div>
+
+        <div class="reports-section">
+            <div class="reports-header">
+                <h3>📊 Laporan Progress</h3>
+                <div class="report-period">
+                    <button class="period-btn active" onclick="showReport('weekly')">Mingguan</button>
+                    <button class="period-btn" onclick="showReport('monthly')">Bulanan</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="progressChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
